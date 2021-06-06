@@ -25,10 +25,11 @@ namespace ACES_1
 
 		public MySqlDataAdapter getAdapter(string sql)
 		{
-			MySqlConnection connection;
+			
+			MySqlDataAdapter adtr = null;
+			MySqlConnection connection = null;
 			connection = getConnection();
 			connection.Open();
-			MySqlDataAdapter adtr = null;
 			try
 			{
 				adtr = new MySqlDataAdapter(sql, connection);
@@ -37,7 +38,6 @@ namespace ACES_1
 			{
 				Console.WriteLine(e.Message);
 			}
-			connection.Close();
 			return adtr;
 		}
 

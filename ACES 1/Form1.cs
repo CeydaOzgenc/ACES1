@@ -24,17 +24,23 @@ namespace ACES_1
         {
            
         }
-        MySqlConnection connection;
-        MySqlDataAdapter adtr;
-        private void button1_Click()
+        
+        
+        
+        
+
+        private void button1_Click(object sender, EventArgs e)
         {
+             MySqlDataAdapter adtr;
+             DataTable dtbl1 = new DataTable();
+             Data dt1 = new Data();
+             adtr = dt1.getAdapter("select hastalik, ogunTipID from diyet_takvim");
+             adtr.Fill(dtbl1);
+             dataGridView1.DataSource = dtbl1;
+             label1.Text = dtbl1.Rows[0][0].ToString();
+
             
-            DataTable dtbl1 = new DataTable();
-            Data dt1 = new Data();
-            connection = dt1.getConnection();
-            adtr = dt1.getAdapter("select hastalik, ogunTipID from diyet_takvim");
-            adtr.Fill(dtbl1);
-            dataGridView1.DataSource = dtbl1;
+
         }
     }
 }
