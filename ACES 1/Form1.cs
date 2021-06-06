@@ -22,19 +22,19 @@ namespace ACES_1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            MySqlConnection baglanti = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=diyetveri_050621");
-            baglanti.Open();
+           
         }
-
+        MySqlConnection connection;
+        MySqlDataAdapter adtr;
         private void button1_Click()
         {
-            MySqlConnection connection;
-            MySqlCommand command;
-            Data data1 = new Data();
-            connection= data1.getConnection();
-            connection.Open();
-            command = ("select hastalik, ogunTipID from diyet_takvim");
             
+            DataTable dtbl1 = new DataTable();
+            Data dt1 = new Data();
+            connection = dt1.getConnection();
+            adtr = dt1.getAdapter("select hastalik, ogunTipID from diyet_takvim");
+            adtr.Fill(dtbl1);
+            dataGridView1.DataSource = dtbl1;
         }
     }
 }

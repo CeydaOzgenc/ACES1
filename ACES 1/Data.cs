@@ -23,18 +23,22 @@ namespace ACES_1
 			return connection;
 		}
 
-		public MySqlCommand getCommand()
+		public MySqlDataAdapter getAdapter(string sql)
 		{
-			MySqlConnection connection = null;
+			MySqlConnection connection;
+			connection = getConnection();
+			connection.Open();
+			MySqlDataAdapter adtr = null;
 			try
 			{
-				connection = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=diyetveri_050621");
+				adtr = new MySqlDataAdapter(sql, connection);
 			}
 			catch (Exception e)
 			{
 				Console.WriteLine(e.Message);
 			}
-			return connection;
+			connection.Close();
+			return adtr;
 		}
 
 
