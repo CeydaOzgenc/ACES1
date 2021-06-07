@@ -9,6 +9,26 @@ namespace ACES_1
 
     public abstract class DiyetYoneticisi
     {
+        public int takvimGun { get; set; }
+        public int anaOgunSayi{ get; set; }
+        public int araOgunSayi { get; set; }
+        public string ogunTip { get; set; }
+
+        public void takvimOlustur()
+        {
+
+
+
+        }
+        public void anaOgunOlustur()
+        {
+
+        }
+        public void araOgunOlustur()
+        {
+
+        }
+
 
     }
 
@@ -17,17 +37,17 @@ namespace ACES_1
     {
     }
 
-    public class ObezDiyetTakvim : DiyetYoneticisi
+    public class ObezDiyetTakvim : DiyetYoneticisi, IDiyetYontem
     {
 
     }
 
-    public class ColyakDiyetTakvim : DiyetYoneticisi
+    public class ColyakDiyetTakvim : DiyetYoneticisi, IDiyetYontem
     {
 
     }
 
-    public class SekerDiyetTakvim : DiyetYoneticisi
+    public class SekerDiyetTakvim : DiyetYoneticisi, IDiyetYontem
     {
 
     }

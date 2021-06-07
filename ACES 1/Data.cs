@@ -40,6 +40,23 @@ namespace ACES_1
 			}
 			return adtr;
 		}
+		public MySqlCommand getCommand(string sql)
+		{
+
+			MySqlCommand command= null;
+			MySqlConnection connection = null;
+			connection = getConnection();
+			connection.Open();
+			try
+			{
+				command = new MySqlCommand(sql, connection);
+			}
+			catch (Exception e)
+			{
+				Console.WriteLine(e.Message);
+			}
+			return command;
+		}
 
 
 

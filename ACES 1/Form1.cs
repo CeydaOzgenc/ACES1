@@ -42,5 +42,12 @@ namespace ACES_1
             
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            GirisForm grs1 = new GirisForm();
+            grs1.Show();
+            this.Hide();
+        }
     }
 }

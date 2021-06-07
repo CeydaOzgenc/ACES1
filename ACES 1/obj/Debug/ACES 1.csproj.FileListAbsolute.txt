@@ -90,3 +90,5 @@ C:\Users\asus\OneDrive\Documents\GitHub\ACES1\ACES 1\bin\Debug\System.Memory.xml
 C:\Users\asus\OneDrive\Documents\GitHub\ACES1\ACES 1\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\asus\OneDrive\Documents\GitHub\ACES1\ACES 1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\asus\OneDrive\Documents\GitHub\ACES1\ACES 1\obj\Debug\ACES 1.csproj.CopyComplete
+C:\Users\asus\OneDrive\Documents\GitHub\ACES1\ACES 1\obj\Debug\ACES_1.GirisForm.resources
+C:\Users\asus\OneDrive\Documents\GitHub\ACES1\ACES 1\obj\Debug\ACES_1.Form2.resources
