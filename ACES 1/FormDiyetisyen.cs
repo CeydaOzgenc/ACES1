@@ -11,9 +11,9 @@ using MySql.Data.MySqlClient;
 
 namespace ACES_1
 {
-    public partial class Form2 : Form
+    public partial class FormDiyetisyen : Form
     {
-        public Form2()
+        public FormDiyetisyen()
         {
             InitializeComponent();
             Data data1 = new Data();

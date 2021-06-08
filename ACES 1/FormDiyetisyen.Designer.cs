@@ -1,7 +1,7 @@
 ﻿
 namespace ACES_1
 {
-    partial class Form2
+    partial class FormDiyetisyen
     {
         /// <summary>
         /// Required designer variable.

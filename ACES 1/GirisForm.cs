@@ -34,7 +34,7 @@ namespace ACES_1
                     if (read[0].ToString() == a && read[1].ToString() == b)
                     {
                         MessageBox.Show("BASARILI!!!");
-                        Form2 frm2 = new Form2();
+                        FormDiyetisyen frm2 = new FormDiyetisyen();
                         frm2.Show();
                         this.Hide();
                         break;
@@ -47,6 +47,11 @@ namespace ACES_1
                 Console.WriteLine("hata: " + error.Message);
             }
            
+        }
+
+        private void GirisForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
