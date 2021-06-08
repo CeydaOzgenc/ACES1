@@ -91,3 +91,4 @@ C:\Users\asus\OneDrive\Documents\GitHub\ACES1\ACES 1\bin\Debug\System.Runtime.Co
 C:\Users\asus\OneDrive\Documents\GitHub\ACES1\ACES 1\obj\Debug\ACES 1.csproj.CopyComplete
 C:\Users\asus\OneDrive\Documents\GitHub\ACES1\ACES 1\obj\Debug\ACES_1.GirisForm.resources
 C:\Users\asus\OneDrive\Documents\GitHub\ACES1\ACES 1\obj\Debug\ACES_1.FormDiyetisyen.resources
+C:\Users\asus\OneDrive\Documents\GitHub\ACES1\ACES 1\obj\Debug\ACES_1.FormAdmin.resources
