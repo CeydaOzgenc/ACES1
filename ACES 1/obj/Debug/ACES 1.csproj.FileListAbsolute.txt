@@ -46,7 +46,6 @@ C:\Users\asus\OneDrive\Documents\GitHub\ACES\ACES 1\ACES 1\obj\Debug\ACES 1.exe
 C:\Users\asus\OneDrive\Documents\GitHub\ACES\ACES 1\ACES 1\obj\Debug\ACES 1.pdb
 C:\Users\asus\OneDrive\Documents\GitHub\ACES1\ACES 1\obj\Debug\ACES 1.csproj.AssemblyReference.cache
 C:\Users\asus\OneDrive\Documents\GitHub\ACES1\ACES 1\obj\Debug\ACES 1.exe.config
-C:\Users\asus\OneDrive\Documents\GitHub\ACES1\ACES 1\obj\Debug\ACES_1.Form1.resources
 C:\Users\asus\OneDrive\Documents\GitHub\ACES1\ACES 1\obj\Debug\ACES_1.Properties.Resources.resources
 C:\Users\asus\OneDrive\Documents\GitHub\ACES1\ACES 1\obj\Debug\ACES 1.csproj.GenerateResource.cache
 C:\Users\asus\OneDrive\Documents\GitHub\ACES1\ACES 1\obj\Debug\ACES 1.csproj.CoreCompileInputs.cache
@@ -91,4 +90,4 @@ C:\Users\asus\OneDrive\Documents\GitHub\ACES1\ACES 1\bin\Debug\System.Numerics.V
 C:\Users\asus\OneDrive\Documents\GitHub\ACES1\ACES 1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\asus\OneDrive\Documents\GitHub\ACES1\ACES 1\obj\Debug\ACES 1.csproj.CopyComplete
 C:\Users\asus\OneDrive\Documents\GitHub\ACES1\ACES 1\obj\Debug\ACES_1.GirisForm.resources
-C:\Users\asus\OneDrive\Documents\GitHub\ACES1\ACES 1\obj\Debug\ACES_1.Form2.resources
+C:\Users\asus\OneDrive\Documents\GitHub\ACES1\ACES 1\obj\Debug\ACES_1.FormDiyetisyen.resources
