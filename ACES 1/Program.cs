@@ -16,7 +16,7 @@ namespace ACES_1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormDiyetisyen());
+            Application.Run(new FormAdmin());
         }
     }
 }
