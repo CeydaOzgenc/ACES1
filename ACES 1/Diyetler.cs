@@ -23,7 +23,7 @@ namespace ACES_1
 
     public class AkdenizDiyeti : IDiyetYontem
     {
-
+        
     }
     public class GlutenFreeDiyeti : IDiyetYontem
     {
