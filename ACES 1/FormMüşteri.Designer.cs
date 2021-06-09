@@ -33,7 +33,7 @@ namespace ACES_1
             this.lblName = new System.Windows.Forms.Label();
             this.lblSurname = new System.Windows.Forms.Label();
             this.lblMail = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblTelNo = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblAddress = new System.Windows.Forms.Label();
             this.lblYas = new System.Windows.Forms.Label();
@@ -79,14 +79,14 @@ namespace ACES_1
             this.lblMail.TabIndex = 3;
             this.lblMail.Text = "Mail";
             // 
-            // label5
+            // lblTelNo
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(28, 207);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 17);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Telefon No:";
+            this.lblTelNo.AutoSize = true;
+            this.lblTelNo.Location = new System.Drawing.Point(28, 207);
+            this.lblTelNo.Name = "lblTelNo";
+            this.lblTelNo.Size = new System.Drawing.Size(82, 17);
+            this.lblTelNo.TabIndex = 4;
+            this.lblTelNo.Text = "Telefon No:";
             // 
             // lblPassword
             // 
@@ -163,7 +163,7 @@ namespace ACES_1
             this.Controls.Add(this.lblYas);
             this.Controls.Add(this.lblAddress);
             this.Controls.Add(this.lblPassword);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblTelNo);
             this.Controls.Add(this.lblMail);
             this.Controls.Add(this.lblSurname);
             this.Controls.Add(this.lblName);
@@ -182,7 +182,7 @@ namespace ACES_1
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblSurname;
         private System.Windows.Forms.Label lblMail;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblTelNo;
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.Label lblYas;
