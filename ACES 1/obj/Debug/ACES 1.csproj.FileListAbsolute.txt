@@ -92,3 +92,4 @@ C:\Users\asus\OneDrive\Documents\GitHub\ACES1\ACES 1\obj\Debug\ACES 1.csproj.Cop
 C:\Users\asus\OneDrive\Documents\GitHub\ACES1\ACES 1\obj\Debug\ACES_1.GirisForm.resources
 C:\Users\asus\OneDrive\Documents\GitHub\ACES1\ACES 1\obj\Debug\ACES_1.FormDiyetisyen.resources
 C:\Users\asus\OneDrive\Documents\GitHub\ACES1\ACES 1\obj\Debug\ACES_1.FormAdmin.resources
+C:\Users\asus\OneDrive\Documents\GitHub\ACES1\ACES 1\obj\Debug\ACES_1.FormMüşteri.resources

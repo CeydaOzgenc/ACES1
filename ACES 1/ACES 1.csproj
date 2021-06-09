@@ -108,6 +108,12 @@
     <Compile Include="FormDiyetisyen.Designer.cs">
       <DependentUpon>FormDiyetisyen.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMüşteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMüşteri.Designer.cs">
+      <DependentUpon>FormMüşteri.cs</DependentUpon>
+    </Compile>
     <Compile Include="GirisForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDiyetisyen.resx">
       <DependentUpon>FormDiyetisyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMüşteri.resx">
+      <DependentUpon>FormMüşteri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GirisForm.resx">
       <DependentUpon>GirisForm.cs</DependentUpon>
