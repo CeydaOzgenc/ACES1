@@ -22,24 +22,45 @@ namespace ACES_1
         {
             string a = txtTC.Text;
             string b = txtSifre.Text;
+            Boolean state = false;
             Data dt1 = new Data();
             MySqlCommand command = new MySqlCommand();
-            command = dt1.getCommand("select TC, password from kullanici");
+            command = dt1.getCommand("select TC, password,tip from kullanici");
             MySqlDataReader read = command.ExecuteReader();
 
             try
             {
+
                 while (read.Read())
                 {
-                    if (read[0].ToString() == a && read[1].ToString() == b)
+                    if (read[0].ToString() == a && read[1].ToString() == b && read[2].ToString() == "Diyetisyen" )
                     {
-                        MessageBox.Show("BASARILI!!!");
-                        FormDiyetisyen frm2 = new FormDiyetisyen();
-                        frm2.Show();
+                        state = true;
+                        FormDiyetisyen frmDiyetisyen = new FormDiyetisyen();
+                        frmDiyetisyen.Show();
                         this.Hide();
                         break;
 
                     }
+                    else if(read[0].ToString() == a && read[1].ToString() == b && read[2].ToString() == "Admin")
+                    {
+                        state = true;
+                        FormAdmin frmAdmin = new FormAdmin();
+                        frmAdmin.Show();
+                        this.Hide();
+                    }
+                    else if(read[0].ToString() == a && read[1].ToString() == b && read[2].ToString() == "Müşteri")
+                    {
+                        state = true;
+                        FormMüşteri frmMusteri = new FormMüşteri(read[0].ToString());
+                        frmMusteri.Show();
+                        this.Hide();
+                    }
+                    
+                }
+                if(state == false)
+                {
+                    MessageBox.Show("Hatali Giris Denemesi!");
                 }
             }
             catch(Exception error)
