@@ -69,7 +69,7 @@ namespace ACES_1
                 }
                 else
                 {
-                    command.Parameters.AddWithValue("@TC", Convert.ToInt32(txtTC.Text));
+                    command.Parameters.AddWithValue("@TC",txtTC.Text);
                     command.ExecuteNonQuery();
                 }
             }

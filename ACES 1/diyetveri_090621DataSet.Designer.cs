@@ -22,7 +22,7 @@ namespace ACES_1 {
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
     [global::System.Xml.Serialization.XmlRootAttribute("diyetveri_050621DataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class diyetveri_050621DataSet : global::System.Data.DataSet {
+    public partial class diyetveri_090621DataSet : global::System.Data.DataSet {
         
         private diyet_takvimDataTable tablediyet_takvim;
         
@@ -36,7 +36,7 @@ namespace ACES_1 {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public diyetveri_050621DataSet() {
+        public diyetveri_090621DataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -47,7 +47,7 @@ namespace ACES_1 {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected diyetveri_050621DataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected diyetveri_090621DataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -172,7 +172,7 @@ namespace ACES_1 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            diyetveri_050621DataSet cln = ((diyetveri_050621DataSet)(base.Clone()));
+            diyetveri_090621DataSet cln = ((diyetveri_090621DataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -321,7 +321,7 @@ namespace ACES_1 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            diyetveri_050621DataSet ds = new diyetveri_050621DataSet();
+            diyetveri_090621DataSet ds = new diyetveri_090621DataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -593,7 +593,7 @@ namespace ACES_1 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                diyetveri_050621DataSet ds = new diyetveri_050621DataSet();
+                diyetveri_090621DataSet ds = new diyetveri_090621DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -969,7 +969,7 @@ namespace ACES_1 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                diyetveri_050621DataSet ds = new diyetveri_050621DataSet();
+                diyetveri_090621DataSet ds = new diyetveri_090621DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1415,7 +1415,7 @@ namespace ACES_1 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                diyetveri_050621DataSet ds = new diyetveri_050621DataSet();
+                diyetveri_090621DataSet ds = new diyetveri_090621DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1800,7 +1800,7 @@ namespace ACES_1 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                diyetveri_050621DataSet ds = new diyetveri_050621DataSet();
+                diyetveri_090621DataSet ds = new diyetveri_090621DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2635,7 +2635,7 @@ namespace ACES_1.diyetveri_050621DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(diyetveri_050621DataSet.diyet_takvimDataTable dataTable) {
+        public virtual int Fill(diyetveri_090621DataSet.diyet_takvimDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -2648,9 +2648,9 @@ namespace ACES_1.diyetveri_050621DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual diyetveri_050621DataSet.diyet_takvimDataTable GetData() {
+        public virtual diyetveri_090621DataSet.diyet_takvimDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            diyetveri_050621DataSet.diyet_takvimDataTable dataTable = new diyetveri_050621DataSet.diyet_takvimDataTable();
+            diyetveri_090621DataSet.diyet_takvimDataTable dataTable = new diyetveri_090621DataSet.diyet_takvimDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -2658,14 +2658,14 @@ namespace ACES_1.diyetveri_050621DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(diyetveri_050621DataSet.diyet_takvimDataTable dataTable) {
+        public virtual int Update(diyetveri_090621DataSet.diyet_takvimDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(diyetveri_050621DataSet dataSet) {
+        public virtual int Update(diyetveri_090621DataSet dataSet) {
             return this.Adapter.Update(dataSet, "diyet_takvim");
         }
         
@@ -2958,7 +2958,7 @@ namespace ACES_1.diyetveri_050621DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(diyetveri_050621DataSet.diyet_yontemDataTable dataTable) {
+        public virtual int Fill(diyetveri_090621DataSet.diyet_yontemDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -2971,9 +2971,9 @@ namespace ACES_1.diyetveri_050621DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual diyetveri_050621DataSet.diyet_yontemDataTable GetData() {
+        public virtual diyetveri_090621DataSet.diyet_yontemDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            diyetveri_050621DataSet.diyet_yontemDataTable dataTable = new diyetveri_050621DataSet.diyet_yontemDataTable();
+            diyetveri_090621DataSet.diyet_yontemDataTable dataTable = new diyetveri_090621DataSet.diyet_yontemDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -3138,7 +3138,7 @@ namespace ACES_1.diyetveri_050621DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(diyetveri_050621DataSet.kullaniciDataTable dataTable) {
+        public virtual int Fill(diyetveri_090621DataSet.kullaniciDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -3151,9 +3151,9 @@ namespace ACES_1.diyetveri_050621DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual diyetveri_050621DataSet.kullaniciDataTable GetData() {
+        public virtual diyetveri_090621DataSet.kullaniciDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            diyetveri_050621DataSet.kullaniciDataTable dataTable = new diyetveri_050621DataSet.kullaniciDataTable();
+            diyetveri_090621DataSet.kullaniciDataTable dataTable = new diyetveri_090621DataSet.kullaniciDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -3617,7 +3617,7 @@ namespace ACES_1.diyetveri_050621DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(diyetveri_050621DataSet.ogun_tipDataTable dataTable) {
+        public virtual int Fill(diyetveri_090621DataSet.ogun_tipDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -3630,9 +3630,9 @@ namespace ACES_1.diyetveri_050621DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual diyetveri_050621DataSet.ogun_tipDataTable GetData() {
+        public virtual diyetveri_090621DataSet.ogun_tipDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            diyetveri_050621DataSet.ogun_tipDataTable dataTable = new diyetveri_050621DataSet.ogun_tipDataTable();
+            diyetveri_090621DataSet.ogun_tipDataTable dataTable = new diyetveri_090621DataSet.ogun_tipDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -3640,14 +3640,14 @@ namespace ACES_1.diyetveri_050621DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(diyetveri_050621DataSet.ogun_tipDataTable dataTable) {
+        public virtual int Update(diyetveri_090621DataSet.ogun_tipDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(diyetveri_050621DataSet dataSet) {
+        public virtual int Update(diyetveri_090621DataSet dataSet) {
             return this.Adapter.Update(dataSet, "ogun_tip");
         }
         
@@ -3943,7 +3943,7 @@ namespace ACES_1.diyetveri_050621DataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(diyetveri_050621DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(diyetveri_090621DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._diyet_takvimTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.diyet_takvim.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -3971,7 +3971,7 @@ namespace ACES_1.diyetveri_050621DataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(diyetveri_050621DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(diyetveri_090621DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._diyet_takvimTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.diyet_takvim.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -3997,7 +3997,7 @@ namespace ACES_1.diyetveri_050621DataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(diyetveri_050621DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(diyetveri_090621DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._ogun_tipTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.ogun_tip.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -4047,7 +4047,7 @@ namespace ACES_1.diyetveri_050621DataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(diyetveri_050621DataSet dataSet) {
+        public virtual int UpdateAll(diyetveri_090621DataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
