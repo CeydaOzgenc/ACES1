@@ -24,15 +24,14 @@ namespace ACES_1
             Data dt1 = new Data();
             MySqlDataAdapter adtr = new MySqlDataAdapter();
             MySqlCommand command = new MySqlCommand();
+            MySqlCommand bak = new MySqlCommand();
             DataTable dtbl1 = new DataTable();
-
             adtr = dt1.getAdapter("select kd.TC, kd.sabah, kd.1ara, kd.ogle, kd.2ara, kd.aksam, kd.3ara , k.hastalik FROM kullanici_diyet kd, kullanici k WHERE kd.TC = k.TC");
             adtr.Fill(dtbl1);
             dataGridView1.DataSource = dtbl1;
             command = dt1.getCommand("SELECT * FROM kullanici WHERE TC = @TC");
             command.Parameters.AddWithValue("@TC", _TC);
             MySqlDataReader readCommand = command.ExecuteReader();
-
             try
             {
                 while(readCommand.Read())
@@ -47,6 +46,13 @@ namespace ACES_1
                     lblKilo.Text = readCommand[9].ToString();
                     lblCinsiyet.Text = readCommand[10].ToString();
                     lblHastalik.Text = readCommand[12].ToString();
+                    bak = dt1.getCommand("select * from kullanici_diyet where TC='" + lblTC.Text.ToString() + "'");
+                    MySqlDataReader readbak = bak.ExecuteReader();
+                    if (readbak.Read())
+                    {
+                        comboBox1.SelectedItem = readbak[1].ToString();
+                        comboBox2.SelectedItem = readbak[2].ToString();
+                    }
 
                 }
             }
@@ -78,10 +84,20 @@ namespace ACES_1
         {
             Data dt1 = new Data();
             MySqlCommand command = new MySqlCommand();
-            command = dt1.getCommand("insert into kullanici_diyet (TC, gun ) values (@TC, @gun)");
-            command.Parameters.AddWithValue("@TC",lblTC.Text);
-            command.Parameters.AddWithValue("@gun", Convert.ToInt32(comboBox1.SelectedItem));
-            command.ExecuteNonQuery();
+            MySqlCommand bak = new MySqlCommand();
+            bak= dt1.getCommand("select * from kullanici_diyet where TC='"+lblTC.Text.ToString()+"'");
+            MySqlDataReader readbak = bak.ExecuteReader();
+            if (readbak.Read()) {
+                command = dt1.getCommand("update kullanici_diyet set gun="+ Convert.ToInt32(comboBox1.SelectedItem) + " where TC = '"+readbak[0]+"'");
+                command.ExecuteNonQuery();
+            }
+            else
+            {
+                command = dt1.getCommand("insert into kullanici_diyet (TC, gun ) values (@TC, @gun)");
+                command.Parameters.AddWithValue("@TC", lblTC.Text);
+                command.Parameters.AddWithValue("@gun", Convert.ToInt32(comboBox1.SelectedItem));
+                command.ExecuteNonQuery();
+            }
             DiyetTakvimFabrikasi takvimFabrikasi = new DiyetTakvimFabrikasi();
             IDiyetTakvim diyetTakvim = takvimFabrikasi.diyetTakvimNesnesiOlustur(lblHastalik.Text.ToString());
             diyetTakvim.takvimOlustur(lblTC.Text.ToString(), comboBox2.SelectedItem.ToString());
