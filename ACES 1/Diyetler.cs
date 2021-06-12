@@ -74,7 +74,7 @@ namespace ACES_1
                     yntolustur.ExecuteNonQuery();
                     for (int x = 2; x < 8; x++)
                     {
-                        if (readkomut[x + 1].ToString() == "1")
+                        if (readkomut[x+1].ToString() == "1")
                         {
                             yntolustur = dtbase.getCommand("update kullanici_diyet set " + veri[x - 2] + "='"+readOgunYontem[x]+ "' where TC='" + TC + "'");
                             yntolustur.ExecuteNonQuery();
@@ -111,7 +111,7 @@ namespace ACES_1
                     yntolustur.ExecuteNonQuery();
                     for (int x = 2; x < 8; x++)
                     {
-                        if (readkomut[x + 1].ToString() == "1")
+                        if (readkomut[x+1].ToString() == "1")
                         {
                             yntolustur = dtbase.getCommand("update kullanici_diyet set " + veri[x - 2] + "='"+readOgunYontem[x]+ "' where TC='" + TC + "'");
                             yntolustur.ExecuteNonQuery();
