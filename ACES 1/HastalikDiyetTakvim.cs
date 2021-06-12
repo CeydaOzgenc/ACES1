@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using System.Windows.Forms;
 
 namespace ACES_1
 {
@@ -22,7 +23,7 @@ namespace ACES_1
             MySqlCommand ogunTip = new MySqlCommand();
             MySqlCommand komut = new MySqlCommand();
             MySqlCommand tkvolustur = new MySqlCommand();
-            ogunTip = dtbase.getCommand("select Oguntip from diyet_takvim where hastalik='Obezite'");
+            ogunTip = dtbase.getCommand("select OguntipID from diyet_takvim where hastalik='Obezite'");
             MySqlDataReader readOgunTip = ogunTip.ExecuteReader();
             while (readOgunTip.Read())
             {
@@ -30,7 +31,8 @@ namespace ACES_1
                 MySqlDataReader readkomut = komut.ExecuteReader();
                 while (readkomut.Read())
                 {
-                    dtbase.getCommand("update kullanici_diyet set sabah='"+readkomut[3]+"', 1ara='"+readkomut[4]+"', ogle='"+readkomut[5]+"', 2ara='"+readkomut[6]+"', aksam='"+readkomut[7]+"', 3ara='"+readkomut[8]+"' where TC='"+TC+"'");
+                    tkvolustur = dtbase.getCommand("update kullanici_diyet set sabah='" + readkomut[3].ToString() + "', 1ara='" + readkomut[4].ToString() + "', ogle='" + readkomut[5].ToString() + "', 2ara='" + readkomut[6].ToString() + "', aksam='" + readkomut[7].ToString() + "', 3ara='" + readkomut[8].ToString() + "' where TC='" + TC + "'");
+                    tkvolustur.ExecuteNonQuery();
                 }
             }
             return this.yontemOlustur(TC, yontem);
@@ -52,15 +54,16 @@ namespace ACES_1
             MySqlCommand ogunTip = new MySqlCommand();
             MySqlCommand komut = new MySqlCommand();
             MySqlCommand tkvolustur = new MySqlCommand();
-            ogunTip = dtbase.getCommand("select Oguntip from diyet_takvim where hastalik='Çölyak'");
+            ogunTip = dtbase.getCommand("select OguntipID from diyet_takvim where hastalik='Çölyak'");
             MySqlDataReader readOgunTip = ogunTip.ExecuteReader();
             while (readOgunTip.Read())
             {
-                komut = dtbase.getCommand("select * from ogun_tip where ogunTip='"+readOgunTip[0].ToString()+"'");
+                komut = dtbase.getCommand("select * from ogun_tip where ogunTip='" + readOgunTip[0].ToString() + "'");
                 MySqlDataReader readkomut = komut.ExecuteReader();
                 while (readkomut.Read())
                 {
-                    tkvolustur = dtbase.getCommand("update kullanici_diyet set sabah='" + readkomut[3] + "', 1ara='" + readkomut[4] + "', ogle='" + readkomut[5] + "', 2ara='" + readkomut[6] + "', aksam='" + readkomut[7] + "', 3ara='" + readkomut[8] + "' where TC='" + TC + "'");
+                    tkvolustur = dtbase.getCommand("update kullanici_diyet set sabah='" + readkomut[3].ToString() + "', 1ara='" + readkomut[4].ToString() + "', ogle='" + readkomut[5].ToString() + "', 2ara='" + readkomut[6].ToString() + "', aksam='" + readkomut[7].ToString() + "', 3ara='" + readkomut[8].ToString() + "' where TC='" + TC + "'");
+                    tkvolustur.ExecuteNonQuery();
                 }
             }
             return this.yontemOlustur(TC, yontem);
@@ -82,7 +85,7 @@ namespace ACES_1
             MySqlCommand ogunTip = new MySqlCommand();
             MySqlCommand komut = new MySqlCommand();
             MySqlCommand tkvolustur = new MySqlCommand();
-            ogunTip = dtbase.getCommand("select Oguntip from diyet_takvim where hastalik='Seker'");
+            ogunTip = dtbase.getCommand("select OguntipID from diyet_takvim where hastalik='Şeker'");
             MySqlDataReader readOgunTip = ogunTip.ExecuteReader();
             while (readOgunTip.Read())
             {
@@ -90,7 +93,8 @@ namespace ACES_1
                 MySqlDataReader readkomut = komut.ExecuteReader();
                 while (readkomut.Read())
                 {
-                    tkvolustur = dtbase.getCommand("update kullanici_diyet set sabah='" + readkomut[3] + "', 1ara='" + readkomut[4] + "', ogle='" + readkomut[5] + "', 2ara='" + readkomut[6] + "', aksam='" + readkomut[7] + "', 3ara='" + readkomut[8] + "' where TC='" + TC + "'");
+                    tkvolustur = dtbase.getCommand("update kullanici_diyet set sabah='" + readkomut[3].ToString() + "', 1ara='" + readkomut[4].ToString() + "', ogle='" + readkomut[5].ToString() + "', 2ara='" + readkomut[6].ToString() + "', aksam='" + readkomut[7].ToString() + "', 3ara='" + readkomut[8].ToString() + "' where TC='" + TC + "'");
+                    tkvolustur.ExecuteNonQuery();
                 }
             }
             return this.yontemOlustur(TC, yontem);

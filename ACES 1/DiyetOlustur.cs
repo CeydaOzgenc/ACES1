@@ -46,6 +46,7 @@ namespace ACES_1
                     lblBoy.Text = readCommand[8].ToString();
                     lblKilo.Text = readCommand[9].ToString();
                     lblCinsiyet.Text = readCommand[10].ToString();
+                    lblHastalik.Text = readCommand[12].ToString();
 
                 }
             }
@@ -77,9 +78,14 @@ namespace ACES_1
         {
             Data dt1 = new Data();
             MySqlCommand command = new MySqlCommand();
-            command = dt1.getCommand("INSERT INTO kullanici_diyet (TC, gun ,sabah, 1ara, ogle, 2ara, aksam, 3ara ) VALUES (@TC, @gun, @sabah, @1ara, @ogle, @2ara, @aksam, @3ara)");
-            
-            
+            command = dt1.getCommand("insert into kullanici_diyet (TC, gun ) values (@TC, @gun)");
+            command.Parameters.AddWithValue("@TC",lblTC.Text);
+            command.Parameters.AddWithValue("@gun", Convert.ToInt32(comboBox1.SelectedItem));
+            command.ExecuteNonQuery();
+            DiyetTakvimFabrikasi takvimFabrikasi = new DiyetTakvimFabrikasi();
+            IDiyetTakvim diyetTakvim = takvimFabrikasi.diyetTakvimNesnesiOlustur(lblHastalik.Text.ToString());
+            diyetTakvim.takvimOlustur(lblTC.Text.ToString(), comboBox2.SelectedItem.ToString());
         }
+
     }
 }
