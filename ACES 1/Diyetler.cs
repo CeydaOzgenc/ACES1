@@ -12,30 +12,30 @@ namespace ACES_1
     }
     public interface IDiyetYontem
     {
-        bool takvimYapisi(int TC);
+        bool takvimYapisi(string TC);
     }
     public class AkdenizDiyeti : IDiyetYontem
     {
-        public bool takvimYapisi(int TC)
+        public bool takvimYapisi(string TC)
         {
             Data dtbase = new Data();
             MySqlCommand ogunYontem = new MySqlCommand();
             MySqlCommand komut = new MySqlCommand();
             MySqlCommand yntolustur = new MySqlCommand();
-            ogunYontem = dtbase.getCommand("select * from diyet_yontem where yontemTip='AkdenizDiyeti'");
+            ogunYontem = dtbase.getCommand("select * from diyet_yontem where yontemTip='Akdeniz Diyeti'");
             MySqlDataReader readOgunYontem = ogunYontem.ExecuteReader();
             while (readOgunYontem.Read())
             {
-                string[] veri = new string[] { "sabah", "1ara", "ogle", "2ara", "aksam", "3ara"};
-                komut = dtbase.getCommand("select * from kullanici_diyet where TC='TC'");
+                string[] veri = new string[] { "sabah", "1ara", "ogle", "2ara", "aksam", "3ara" };
+                komut = dtbase.getCommand("select * from kullanici_diyet where TC='"+TC+"'");
                 MySqlDataReader readkomut = komut.ExecuteReader();
                 while (readkomut.Read())
                 {
-                    for (int x=2;x<8; x++)
+                    for (int x = 2; x < 8; x++)
                     {
                         if (readkomut[x].ToString() == "1")
                         {
-                            yntolustur = dtbase.getCommand("update kullanici_diyet set "+veri[x - 2]+ "='readOgunYontem[x]'");
+                            yntolustur = dtbase.getCommand("update kullanici_diyet set " + veri[x - 2] + "='"+readOgunYontem[x]+"'");
                         }
                         else
                         {
@@ -49,18 +49,18 @@ namespace ACES_1
     }
     public class GlutenFreeDiyeti : IDiyetYontem
     {
-        public bool takvimYapisi(int TC)
+        public bool takvimYapisi(string TC)
         {
             Data dtbase = new Data();
             MySqlCommand ogunYontem = new MySqlCommand();
             MySqlCommand komut = new MySqlCommand();
             MySqlCommand yntolustur = new MySqlCommand();
-            ogunYontem = dtbase.getCommand("select * from diyet_yontem where yontemTip='GlutenFreeDiyeti'");
+            ogunYontem = dtbase.getCommand("select * from diyet_yontem where yontemTip='Gluten Free Diyeti'");
             MySqlDataReader readOgunYontem = ogunYontem.ExecuteReader();
             while (readOgunYontem.Read())
             {
                 string[] veri = new string[] { "sabah", "1ara", "ogle", "2ara", "aksam", "3ara" };
-                komut = dtbase.getCommand("select * from kullanici_diyet where TC='TC'");
+                komut = dtbase.getCommand("select * from kullanici_diyet where TC='"+TC+"'");
                 MySqlDataReader readkomut = komut.ExecuteReader();
                 while (readkomut.Read())
                 {
@@ -68,7 +68,7 @@ namespace ACES_1
                     {
                         if (readkomut[x].ToString() == "1")
                         {
-                            yntolustur = dtbase.getCommand("update kullanici_diyet set " + veri[x - 2] + "='readOgunYontem[x]'");
+                            yntolustur = dtbase.getCommand("update kullanici_diyet set " + veri[x - 2] + "='"+readOgunYontem[x]+"'");
                         }
                         else
                         {
@@ -82,18 +82,18 @@ namespace ACES_1
     }
     public class DenizUrunleriDiyeti : IDiyetYontem
     {
-        public bool takvimYapisi(int TC)
+        public bool takvimYapisi(string TC)
         {
             Data dtbase = new Data();
             MySqlCommand ogunYontem = new MySqlCommand();
             MySqlCommand komut = new MySqlCommand();
             MySqlCommand yntolustur = new MySqlCommand();
-            ogunYontem = dtbase.getCommand("select * from diyet_yontem where yontemTip='DenizUrunleriDiyeti'");
+            ogunYontem = dtbase.getCommand("select * from diyet_yontem where yontemTip='Deniz Urunleri Diyeti'");
             MySqlDataReader readOgunYontem = ogunYontem.ExecuteReader();
             while (readOgunYontem.Read())
             {
                 string[] veri = new string[] { "sabah", "1ara", "ogle", "2ara", "aksam", "3ara" };
-                komut = dtbase.getCommand("select * from kullanici_diyet where TC='TC'");
+                komut = dtbase.getCommand("select * from kullanici_diyet where TC='"+TC+"'");
                 MySqlDataReader readkomut = komut.ExecuteReader();
                 while (readkomut.Read())
                 {
@@ -101,7 +101,7 @@ namespace ACES_1
                     {
                         if (readkomut[x].ToString() == "1")
                         {
-                            yntolustur = dtbase.getCommand("update kullanici_diyet set " + veri[x - 2] + "='readOgunYontem[x]'");
+                            yntolustur = dtbase.getCommand("update kullanici_diyet set " + veri[x - 2] + "='"+readOgunYontem[x]+"'");
                         }
                         else
                         {
@@ -115,18 +115,18 @@ namespace ACES_1
     }
     public class YesilliklerDunyasiDiyeti : IDiyetYontem
     {
-        public bool takvimYapisi(int TC)
+        public bool takvimYapisi(string TC)
         {
             Data dtbase = new Data();
             MySqlCommand ogunYontem = new MySqlCommand();
             MySqlCommand komut = new MySqlCommand();
             MySqlCommand yntolustur = new MySqlCommand();
-            ogunYontem = dtbase.getCommand("select * from diyet_yontem where yontemTip='YesilliklerDunyasiDiyeti'");
+            ogunYontem = dtbase.getCommand("select * from diyet_yontem where yontemTip='Yesillikler Dunyasi Diyeti'");
             MySqlDataReader readOgunYontem = ogunYontem.ExecuteReader();
             while (readOgunYontem.Read())
             {
                 string[] veri = new string[] { "sabah", "1ara", "ogle", "2ara", "aksam", "3ara" };
-                komut = dtbase.getCommand("select * from kullanici_diyet where TC='TC'");
+                komut = dtbase.getCommand("select * from kullanici_diyet where TC='"+TC+"'");
                 MySqlDataReader readkomut = komut.ExecuteReader();
                 while (readkomut.Read())
                 {
@@ -134,7 +134,7 @@ namespace ACES_1
                     {
                         if (readkomut[x].ToString() == "1")
                         {
-                            yntolustur = dtbase.getCommand("update kullanici_diyet set " + veri[x - 2] + "='readOgunYontem[x]'");
+                            yntolustur = dtbase.getCommand("update kullanici_diyet set " + veri[x - 2] + "='"+readOgunYontem[x]+"'");
                         }
                         else
                         {
@@ -169,3 +169,4 @@ namespace ACES_1
         }
     }
 }
+

@@ -46,7 +46,7 @@ namespace ACES_1
     }
     public class JsonRaporKurucu : RaporTemelKurucu
     {
-        public JsonRaporKurucu(RaporBilgi raporbilgi) :base(raporbilgi)
+        public JsonRaporKurucu(RaporBilgi raporbilgi) : base(raporbilgi)
         {
         }
         public override string KullaniciBilgi()
@@ -76,7 +76,8 @@ namespace ACES_1
     public class RaporYontemi
     {
         private RaporTemelKurucu Rapor;
-        public RaporYontemi(RaporTemelKurucu rapor){
+        public RaporYontemi(RaporTemelKurucu rapor)
+        {
             Rapor = rapor;
         }
         public string RaporBilgiYazi()
