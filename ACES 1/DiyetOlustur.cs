@@ -50,7 +50,6 @@ namespace ACES_1
                     MySqlDataReader readbak = bak.ExecuteReader();
                     if (readbak.Read())
                     {
-                        MessageBox.Show(readbak[1].ToString());
                         comboBox1.SelectedItem = readbak[1].ToString();
                         comboBox2.SelectedItem = readbak[2].ToString();
                     }
@@ -89,8 +88,7 @@ namespace ACES_1
             bak= dt1.getCommand("select * from kullanici_diyet where TC='"+lblTC.Text.ToString()+"'");
             MySqlDataReader readbak = bak.ExecuteReader();
             if (readbak.Read()) {
-                command = dt1.getCommand("update kullanici_diyet set TC="+ lblTC.Text+", gun="+ Convert.ToInt32(comboBox1.SelectedItem));
-                command.Parameters.AddWithValue("@gun", Convert.ToInt32(comboBox1.SelectedItem));
+                command = dt1.getCommand("update kullanici_diyet set gun="+ Convert.ToInt32(comboBox1.SelectedItem) + " where TC = '"+readbak[0]+"'");
                 command.ExecuteNonQuery();
             }
             else

@@ -32,18 +32,19 @@ namespace ACES_1
                 MySqlDataReader readkomut = komut.ExecuteReader();
                 while (readkomut.Read())
                 {
-                    yntolustur = dtbase.getCommand("update kullanici_diyet set yontemTip='Akdeniz Diyeti'");
+                    yntolustur = dtbase.getCommand("update kullanici_diyet set yontemTip='Akdeniz Diyeti' where TC='"+TC+"'");
                     yntolustur.ExecuteNonQuery();
                     for (int x = 2; x < 8; x++)
                     {
-                        if (readkomut[x].ToString() == "1")
+                        MessageBox.Show(veri[x-2]);
+                        if (readkomut[x+1].ToString() == "1")
                         {
-                            yntolustur = dtbase.getCommand("update kullanici_diyet set " + veri[x - 2] + "='"+readOgunYontem[x]+"'");
+                            yntolustur = dtbase.getCommand("update kullanici_diyet set " + veri[x - 2] + "='"+readOgunYontem[x]+ "' where TC='" + TC + "'");
                             yntolustur.ExecuteNonQuery();
                         }
                         else
                         {
-                            yntolustur = dtbase.getCommand("update kullanici_diyet set " + veri[x - 2] + "=''");
+                            yntolustur = dtbase.getCommand("update kullanici_diyet set " + veri[x - 2] + "='' where TC='" + TC + "'");
                             yntolustur.ExecuteNonQuery();
                         }
                     }
@@ -69,18 +70,18 @@ namespace ACES_1
                 MySqlDataReader readkomut = komut.ExecuteReader();
                 while (readkomut.Read())
                 {
-                    yntolustur = dtbase.getCommand("update kullanici_diyet set yontemTip='Gluten Free Diyeti'");
+                    yntolustur = dtbase.getCommand("update kullanici_diyet set yontemTip='Gluten Free Diyeti' where TC='" + TC + "'");
                     yntolustur.ExecuteNonQuery();
                     for (int x = 2; x < 8; x++)
                     {
-                        if (readkomut[x].ToString() == "1")
+                        if (readkomut[x + 1].ToString() == "1")
                         {
-                            yntolustur = dtbase.getCommand("update kullanici_diyet set " + veri[x - 2] + "='"+readOgunYontem[x]+"'");
+                            yntolustur = dtbase.getCommand("update kullanici_diyet set " + veri[x - 2] + "='"+readOgunYontem[x]+ "' where TC='" + TC + "'");
                             yntolustur.ExecuteNonQuery();
                         }
                         else
                         {
-                            yntolustur = dtbase.getCommand("update kullanici_diyet set " + veri[x - 2] + "=''");
+                            yntolustur = dtbase.getCommand("update kullanici_diyet set " + veri[x - 2] + "='' where TC='" + TC + "'");
                             yntolustur.ExecuteNonQuery();
                         }
                     }
@@ -106,18 +107,18 @@ namespace ACES_1
                 MySqlDataReader readkomut = komut.ExecuteReader();
                 while (readkomut.Read())
                 {
-                    yntolustur = dtbase.getCommand("update kullanici_diyet set yontemTip='Deniz Mahsulleri Diyeti'");
+                    yntolustur = dtbase.getCommand("update kullanici_diyet set yontemTip='Deniz Mahsulleri Diyeti' where TC='" + TC + "'");
                     yntolustur.ExecuteNonQuery();
                     for (int x = 2; x < 8; x++)
                     {
-                        if (readkomut[x].ToString() == "1")
+                        if (readkomut[x + 1].ToString() == "1")
                         {
-                            yntolustur = dtbase.getCommand("update kullanici_diyet set " + veri[x - 2] + "='"+readOgunYontem[x]+"'");
+                            yntolustur = dtbase.getCommand("update kullanici_diyet set " + veri[x - 2] + "='"+readOgunYontem[x]+ "' where TC='" + TC + "'");
                             yntolustur.ExecuteNonQuery();
                         }
                         else
                         {
-                            yntolustur = dtbase.getCommand("update kullanici_diyet set " + veri[x - 2] + "=''");
+                            yntolustur = dtbase.getCommand("update kullanici_diyet set " + veri[x - 2] + "='' where TC='" + TC + "'");
                             yntolustur.ExecuteNonQuery();
                         }
                     }
@@ -143,18 +144,18 @@ namespace ACES_1
                 MySqlDataReader readkomut = komut.ExecuteReader();
                 while (readkomut.Read())
                 {
-                    yntolustur = dtbase.getCommand("update kullanici_diyet set yontemTip='Yeşillikler Dünyasi Diyeti'");
+                    yntolustur = dtbase.getCommand("update kullanici_diyet set yontemTip='Yeşillikler Dünyasi Diyeti' where TC='" + TC + "'");
                     yntolustur.ExecuteNonQuery();
                     for (int x = 2; x < 8; x++)
                     {
-                        if (readkomut[x].ToString() == "1")
+                        if (readkomut[x + 1].ToString() == "1")
                         {
-                            yntolustur = dtbase.getCommand("update kullanici_diyet set " + veri[x - 2] + "='"+readOgunYontem[x]+"'");
+                            yntolustur = dtbase.getCommand("update kullanici_diyet set " + veri[x - 2] + "='"+readOgunYontem[x]+ "' where TC='" + TC + "'");
                             yntolustur.ExecuteNonQuery();
                         }
                         else
                         {
-                            yntolustur = dtbase.getCommand("update kullanici_diyet set " + veri[x - 2] + "=''");
+                            yntolustur = dtbase.getCommand("update kullanici_diyet set " + veri[x - 2] + "='' where TC = '" + TC + "'");
                             yntolustur.ExecuteNonQuery();
                         }
                     }
