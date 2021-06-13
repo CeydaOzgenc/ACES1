@@ -74,6 +74,7 @@ namespace ACES_1
         {
             DiyetOlustur diyetOlustur = new DiyetOlustur(lblTC.Text);
             diyetOlustur.ShowDialog();
+            this.Hide();
 
         }
     }

@@ -103,5 +103,11 @@ namespace ACES_1
             diyetTakvim.takvimOlustur(lblTC.Text.ToString(), comboBox2.SelectedItem.ToString());
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormRapor form = new FormRapor(lblTC.Text);
+            form.Show();
+            this.Hide();
+        }
     }
 }
