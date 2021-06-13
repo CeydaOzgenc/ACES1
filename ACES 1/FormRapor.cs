@@ -51,7 +51,7 @@ namespace ACES_1
                 diyet.Diyet3Ara = readCommand[7].ToString();
             }
             RaporTemelKurucu rapor;
-            raporsecim =comboBox1.SelectedIndex;
+            raporsecim =cmbFormatlar.SelectedIndex;
             if (raporsecim == 0)
             {
                 rapor = new HtmlRaporKurucu(kullanici,diyet);

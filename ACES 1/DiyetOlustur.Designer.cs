@@ -57,14 +57,16 @@ namespace ACES_1
             this.lbl12 = new System.Windows.Forms.Label();
             this.lblHastalik = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbl1
             // 
             this.lbl1.AutoSize = true;
             this.lbl1.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl1.Location = new System.Drawing.Point(24, 41);
+            this.lbl1.Location = new System.Drawing.Point(7, 27);
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(42, 23);
             this.lbl1.TabIndex = 0;
@@ -74,7 +76,7 @@ namespace ACES_1
             // 
             this.lbl2.AutoSize = true;
             this.lbl2.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl2.Location = new System.Drawing.Point(24, 95);
+            this.lbl2.Location = new System.Drawing.Point(7, 81);
             this.lbl2.Name = "lbl2";
             this.lbl2.Size = new System.Drawing.Size(40, 23);
             this.lbl2.TabIndex = 1;
@@ -84,7 +86,7 @@ namespace ACES_1
             // 
             this.lbl3.AutoSize = true;
             this.lbl3.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl3.Location = new System.Drawing.Point(24, 145);
+            this.lbl3.Location = new System.Drawing.Point(7, 131);
             this.lbl3.Name = "lbl3";
             this.lbl3.Size = new System.Drawing.Size(66, 23);
             this.lbl3.TabIndex = 1;
@@ -94,7 +96,7 @@ namespace ACES_1
             // 
             this.lbl4.AutoSize = true;
             this.lbl4.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl4.Location = new System.Drawing.Point(24, 200);
+            this.lbl4.Location = new System.Drawing.Point(7, 186);
             this.lbl4.Name = "lbl4";
             this.lbl4.Size = new System.Drawing.Size(57, 23);
             this.lbl4.TabIndex = 1;
@@ -104,7 +106,7 @@ namespace ACES_1
             // 
             this.lbl5.AutoSize = true;
             this.lbl5.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl5.Location = new System.Drawing.Point(24, 250);
+            this.lbl5.Location = new System.Drawing.Point(7, 236);
             this.lbl5.Name = "lbl5";
             this.lbl5.Size = new System.Drawing.Size(79, 23);
             this.lbl5.TabIndex = 1;
@@ -114,7 +116,7 @@ namespace ACES_1
             // 
             this.lbl6.AutoSize = true;
             this.lbl6.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl6.Location = new System.Drawing.Point(286, 45);
+            this.lbl6.Location = new System.Drawing.Point(269, 31);
             this.lbl6.Name = "lbl6";
             this.lbl6.Size = new System.Drawing.Size(46, 23);
             this.lbl6.TabIndex = 1;
@@ -124,7 +126,7 @@ namespace ACES_1
             // 
             this.lbl7.AutoSize = true;
             this.lbl7.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl7.Location = new System.Drawing.Point(286, 98);
+            this.lbl7.Location = new System.Drawing.Point(269, 84);
             this.lbl7.Name = "lbl7";
             this.lbl7.Size = new System.Drawing.Size(48, 23);
             this.lbl7.TabIndex = 1;
@@ -134,7 +136,7 @@ namespace ACES_1
             // 
             this.lbl8.AutoSize = true;
             this.lbl8.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl8.Location = new System.Drawing.Point(286, 148);
+            this.lbl8.Location = new System.Drawing.Point(269, 134);
             this.lbl8.Name = "lbl8";
             this.lbl8.Size = new System.Drawing.Size(52, 23);
             this.lbl8.TabIndex = 1;
@@ -144,23 +146,24 @@ namespace ACES_1
             // 
             this.lbl9.AutoSize = true;
             this.lbl9.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl9.Location = new System.Drawing.Point(286, 202);
+            this.lbl9.Location = new System.Drawing.Point(269, 188);
             this.lbl9.Name = "lbl9";
-            this.lbl9.Size = new System.Drawing.Size(77, 23);
+            this.lbl9.Size = new System.Drawing.Size(84, 23);
             this.lbl9.TabIndex = 1;
-            this.lbl9.Text = "Cinsiyet";
+            this.lbl9.Text = "Cinsiyet:";
             // 
             // dataGridView1
             // 
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.Lavender;
             this.dataGridView1.ColumnHeadersHeight = 29;
-            this.dataGridView1.Location = new System.Drawing.Point(546, 41);
+            this.dataGridView1.Location = new System.Drawing.Point(549, 41);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(448, 375);
+            this.dataGridView1.Size = new System.Drawing.Size(448, 425);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -168,7 +171,7 @@ namespace ACES_1
             // 
             this.lbl10.AutoSize = true;
             this.lbl10.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl10.Location = new System.Drawing.Point(24, 305);
+            this.lbl10.Location = new System.Drawing.Point(58, 354);
             this.lbl10.Name = "lbl10";
             this.lbl10.Size = new System.Drawing.Size(53, 23);
             this.lbl10.TabIndex = 14;
@@ -178,7 +181,7 @@ namespace ACES_1
             // 
             this.lbl11.AutoSize = true;
             this.lbl11.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl11.Location = new System.Drawing.Point(24, 351);
+            this.lbl11.Location = new System.Drawing.Point(4, 400);
             this.lbl11.Name = "lbl11";
             this.lbl11.Size = new System.Drawing.Size(107, 23);
             this.lbl11.TabIndex = 15;
@@ -195,7 +198,7 @@ namespace ACES_1
             "5",
             "6",
             "7"});
-            this.comboBox1.Location = new System.Drawing.Point(127, 297);
+            this.comboBox1.Location = new System.Drawing.Point(117, 353);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 27);
             this.comboBox1.TabIndex = 16;
@@ -208,7 +211,7 @@ namespace ACES_1
             "Deniz Mahsulleri Diyeti",
             "Gluten Free Diyeti",
             "Yeşillikler Dünyasi Diyeti"});
-            this.comboBox2.Location = new System.Drawing.Point(127, 352);
+            this.comboBox2.Location = new System.Drawing.Point(117, 399);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(194, 27);
             this.comboBox2.TabIndex = 17;
@@ -227,7 +230,7 @@ namespace ACES_1
             // 
             this.lblTelNo.AutoSize = true;
             this.lblTelNo.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblTelNo.Location = new System.Drawing.Point(137, 250);
+            this.lblTelNo.Location = new System.Drawing.Point(120, 236);
             this.lblTelNo.Name = "lblTelNo";
             this.lblTelNo.Size = new System.Drawing.Size(18, 28);
             this.lblTelNo.TabIndex = 20;
@@ -237,7 +240,7 @@ namespace ACES_1
             // 
             this.lblMail.AutoSize = true;
             this.lblMail.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblMail.Location = new System.Drawing.Point(137, 200);
+            this.lblMail.Location = new System.Drawing.Point(120, 186);
             this.lblMail.Name = "lblMail";
             this.lblMail.Size = new System.Drawing.Size(18, 28);
             this.lblMail.TabIndex = 21;
@@ -247,7 +250,7 @@ namespace ACES_1
             // 
             this.lblSurname.AutoSize = true;
             this.lblSurname.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSurname.Location = new System.Drawing.Point(137, 145);
+            this.lblSurname.Location = new System.Drawing.Point(120, 131);
             this.lblSurname.Name = "lblSurname";
             this.lblSurname.Size = new System.Drawing.Size(18, 28);
             this.lblSurname.TabIndex = 22;
@@ -257,7 +260,7 @@ namespace ACES_1
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblName.Location = new System.Drawing.Point(137, 95);
+            this.lblName.Location = new System.Drawing.Point(120, 81);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(18, 28);
             this.lblName.TabIndex = 23;
@@ -267,7 +270,7 @@ namespace ACES_1
             // 
             this.lblTC.AutoSize = true;
             this.lblTC.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblTC.Location = new System.Drawing.Point(137, 41);
+            this.lblTC.Location = new System.Drawing.Point(120, 27);
             this.lblTC.Name = "lblTC";
             this.lblTC.Size = new System.Drawing.Size(18, 28);
             this.lblTC.TabIndex = 19;
@@ -277,7 +280,7 @@ namespace ACES_1
             // 
             this.lblCinsiyet.AutoSize = true;
             this.lblCinsiyet.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblCinsiyet.Location = new System.Drawing.Point(402, 202);
+            this.lblCinsiyet.Location = new System.Drawing.Point(385, 188);
             this.lblCinsiyet.Name = "lblCinsiyet";
             this.lblCinsiyet.Size = new System.Drawing.Size(18, 28);
             this.lblCinsiyet.TabIndex = 25;
@@ -287,7 +290,7 @@ namespace ACES_1
             // 
             this.lblKilo.AutoSize = true;
             this.lblKilo.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblKilo.Location = new System.Drawing.Point(402, 149);
+            this.lblKilo.Location = new System.Drawing.Point(385, 135);
             this.lblKilo.Name = "lblKilo";
             this.lblKilo.Size = new System.Drawing.Size(18, 28);
             this.lblKilo.TabIndex = 26;
@@ -297,7 +300,7 @@ namespace ACES_1
             // 
             this.lblBoy.AutoSize = true;
             this.lblBoy.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblBoy.Location = new System.Drawing.Point(402, 98);
+            this.lblBoy.Location = new System.Drawing.Point(385, 84);
             this.lblBoy.Name = "lblBoy";
             this.lblBoy.Size = new System.Drawing.Size(18, 28);
             this.lblBoy.TabIndex = 27;
@@ -307,7 +310,7 @@ namespace ACES_1
             // 
             this.lblYas.AutoSize = true;
             this.lblYas.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblYas.Location = new System.Drawing.Point(402, 45);
+            this.lblYas.Location = new System.Drawing.Point(385, 31);
             this.lblYas.Name = "lblYas";
             this.lblYas.Size = new System.Drawing.Size(18, 28);
             this.lblYas.TabIndex = 24;
@@ -315,29 +318,31 @@ namespace ACES_1
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(407, 293);
+            this.button1.BackColor = System.Drawing.Color.BlueViolet;
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.Location = new System.Drawing.Point(404, 341);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(114, 46);
             this.button1.TabIndex = 28;
             this.button1.Text = "Onayla";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // lbl12
             // 
             this.lbl12.AutoSize = true;
             this.lbl12.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl12.Location = new System.Drawing.Point(286, 250);
+            this.lbl12.Location = new System.Drawing.Point(269, 236);
             this.lbl12.Name = "lbl12";
-            this.lbl12.Size = new System.Drawing.Size(82, 23);
+            this.lbl12.Size = new System.Drawing.Size(89, 23);
             this.lbl12.TabIndex = 29;
-            this.lbl12.Text = "Hastalik";
+            this.lbl12.Text = "Hastalik:";
             // 
             // lblHastalik
             // 
             this.lblHastalik.AutoSize = true;
-            this.lblHastalik.Location = new System.Drawing.Point(402, 250);
+            this.lblHastalik.Location = new System.Drawing.Point(385, 236);
             this.lblHastalik.Name = "lblHastalik";
             this.lblHastalik.Size = new System.Drawing.Size(13, 19);
             this.lblHastalik.TabIndex = 30;
@@ -345,52 +350,67 @@ namespace ACES_1
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(407, 355);
+            this.button2.BackColor = System.Drawing.Color.Orchid;
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button2.Location = new System.Drawing.Point(404, 403);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(114, 46);
             this.button2.TabIndex = 31;
             this.button2.Text = "Rapor ";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.lbl12);
+            this.groupBox1.Controls.Add(this.lbl1);
+            this.groupBox1.Controls.Add(this.lblHastalik);
+            this.groupBox1.Controls.Add(this.lbl2);
+            this.groupBox1.Controls.Add(this.lbl3);
+            this.groupBox1.Controls.Add(this.lbl4);
+            this.groupBox1.Controls.Add(this.lblCinsiyet);
+            this.groupBox1.Controls.Add(this.lbl5);
+            this.groupBox1.Controls.Add(this.lblKilo);
+            this.groupBox1.Controls.Add(this.lbl6);
+            this.groupBox1.Controls.Add(this.lblBoy);
+            this.groupBox1.Controls.Add(this.lbl7);
+            this.groupBox1.Controls.Add(this.lblYas);
+            this.groupBox1.Controls.Add(this.lbl8);
+            this.groupBox1.Controls.Add(this.lblTelNo);
+            this.groupBox1.Controls.Add(this.lbl9);
+            this.groupBox1.Controls.Add(this.lblMail);
+            this.groupBox1.Controls.Add(this.lblTC);
+            this.groupBox1.Controls.Add(this.lblSurname);
+            this.groupBox1.Controls.Add(this.lblName);
+            this.groupBox1.Location = new System.Drawing.Point(25, 41);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(493, 274);
+            this.groupBox1.TabIndex = 32;
+            this.groupBox1.TabStop = false;
             // 
             // DiyetOlustur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(993, 415);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(996, 465);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.lblHastalik);
-            this.Controls.Add(this.lbl12);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.lblCinsiyet);
-            this.Controls.Add(this.lblKilo);
-            this.Controls.Add(this.lblBoy);
-            this.Controls.Add(this.lblYas);
-            this.Controls.Add(this.lblTelNo);
-            this.Controls.Add(this.lblMail);
-            this.Controls.Add(this.lblSurname);
-            this.Controls.Add(this.lblName);
-            this.Controls.Add(this.lblTC);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.lbl11);
             this.Controls.Add(this.lbl10);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.lbl9);
-            this.Controls.Add(this.lbl8);
-            this.Controls.Add(this.lbl7);
-            this.Controls.Add(this.lbl6);
-            this.Controls.Add(this.lbl5);
-            this.Controls.Add(this.lbl4);
-            this.Controls.Add(this.lbl3);
-            this.Controls.Add(this.lbl2);
-            this.Controls.Add(this.lbl1);
             this.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Name = "DiyetOlustur";
             this.Text = "DiyetOlustur";
             this.Load += new System.EventHandler(this.DiyetOlustur_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -426,5 +446,6 @@ namespace ACES_1
         private System.Windows.Forms.Label lbl12;
         private System.Windows.Forms.Label lblHastalik;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
