@@ -56,6 +56,7 @@ namespace ACES_1
             this.button1 = new System.Windows.Forms.Button();
             this.lbl12 = new System.Windows.Forms.Label();
             this.lblHastalik = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -342,11 +343,22 @@ namespace ACES_1
             this.lblHastalik.TabIndex = 30;
             this.lblHastalik.Text = " ";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(407, 355);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(114, 46);
+            this.button2.TabIndex = 31;
+            this.button2.Text = "Rapor ";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // DiyetOlustur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(993, 415);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.lblHastalik);
             this.Controls.Add(this.lbl12);
             this.Controls.Add(this.button1);
@@ -413,5 +425,6 @@ namespace ACES_1
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lbl12;
         private System.Windows.Forms.Label lblHastalik;
+        private System.Windows.Forms.Button button2;
     }
 }

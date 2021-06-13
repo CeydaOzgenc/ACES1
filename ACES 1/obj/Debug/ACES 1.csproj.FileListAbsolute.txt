@@ -314,3 +314,6 @@ C:\Users\ceyda\OneDrive\Belgeler\GitHub\ACES1\ACES 1\obj\Debug\ACES 1.csproj.Cor
 C:\Users\ceyda\OneDrive\Belgeler\GitHub\ACES1\ACES 1\obj\Debug\ACES 1.csproj.CopyComplete
 C:\Users\ceyda\OneDrive\Belgeler\GitHub\ACES1\ACES 1\obj\Debug\ACES 1.exe
 C:\Users\ceyda\OneDrive\Belgeler\GitHub\ACES1\ACES 1\obj\Debug\ACES 1.pdb
+C:\Users\ceyda\OneDrive\Belgeler\GitHub\ACES1\ACES 1\obj\Debug\ACES_1.FormRapor.resources
+C:\Users\ceyda\OneDrive\Belgeler\GitHub\ACES1\ACES 1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ceyda\OneDrive\Belgeler\GitHub\ACES1\ACES 1\bin\Debug\Newtonsoft.Json.xml
