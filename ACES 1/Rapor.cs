@@ -23,28 +23,6 @@ namespace ACES_1
         public abstract StreamWriter KullaniciBilgi();
         public abstract StreamWriter DiyetBilgi();
     }
-    /*public class RaporBilgi
-    {
-        public string KullaniciTC;
-        public string KullaniciAdi;
-        public string KullaniciSoyadi;
-        public string KullaniciMail;
-        public string KullaniciAdres;
-        public string KullaniciTelno;
-        public string KullaniciYas;
-        public string KullaniciBoy;
-        public string KullaniciKilo;
-        public string KullaniciCinsiyet;
-        public string KullaniciHastalik;
-        public int DiyetGun;
-        public string DiyetSabah;
-        public string DiyetOgle;
-        public string DiyetAksam;
-        public string Diyet1Ara;
-        public string Diyet2Ara;
-        public string Diyet3Ara;
-
-    }*/
     public class Kullanici
     {
         public string KullaniciTC;
