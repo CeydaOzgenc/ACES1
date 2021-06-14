@@ -60,6 +60,7 @@ namespace ACES_1
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.CadetBlue;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(-1, -1);
             this.dataGridView1.Name = "dataGridView1";
@@ -72,214 +73,244 @@ namespace ACES_1
             // lblTC
             // 
             this.lblTC.AutoSize = true;
-            this.lblTC.Location = new System.Drawing.Point(33, 284);
+            this.lblTC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblTC.Location = new System.Drawing.Point(55, 274);
             this.lblTC.Name = "lblTC";
-            this.lblTC.Size = new System.Drawing.Size(30, 17);
+            this.lblTC.Size = new System.Drawing.Size(46, 25);
             this.lblTC.TabIndex = 1;
             this.lblTC.Text = "TC:";
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(33, 321);
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblName.Location = new System.Drawing.Point(58, 311);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(29, 17);
+            this.lblName.Size = new System.Drawing.Size(43, 25);
             this.lblName.TabIndex = 2;
             this.lblName.Text = "Ad:";
             // 
             // lblSoyad
             // 
             this.lblSoyad.AutoSize = true;
-            this.lblSoyad.Location = new System.Drawing.Point(30, 350);
+            this.lblSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblSoyad.Location = new System.Drawing.Point(26, 345);
             this.lblSoyad.Name = "lblSoyad";
-            this.lblSoyad.Size = new System.Drawing.Size(52, 17);
+            this.lblSoyad.Size = new System.Drawing.Size(75, 25);
             this.lblSoyad.TabIndex = 3;
             this.lblSoyad.Text = "Soyad:";
             // 
             // lblMail
             // 
             this.lblMail.AutoSize = true;
-            this.lblMail.Location = new System.Drawing.Point(33, 379);
+            this.lblMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMail.Location = new System.Drawing.Point(47, 382);
             this.lblMail.Name = "lblMail";
-            this.lblMail.Size = new System.Drawing.Size(33, 17);
+            this.lblMail.Size = new System.Drawing.Size(54, 25);
             this.lblMail.TabIndex = 4;
-            this.lblMail.Text = "Mail";
+            this.lblMail.Text = "Mail:";
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(33, 413);
+            this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblPassword.Location = new System.Drawing.Point(43, 416);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(41, 17);
+            this.lblPassword.Size = new System.Drawing.Size(58, 25);
             this.lblPassword.TabIndex = 5;
             this.lblPassword.Text = "Şifre:";
             // 
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
-            this.lblAddress.Location = new System.Drawing.Point(33, 446);
+            this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblAddress.Location = new System.Drawing.Point(31, 452);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(49, 17);
+            this.lblAddress.Size = new System.Drawing.Size(70, 25);
             this.lblAddress.TabIndex = 6;
             this.lblAddress.Text = "Adres:";
             // 
             // lblTelNo
             // 
             this.lblTelNo.AutoSize = true;
-            this.lblTelNo.Location = new System.Drawing.Point(254, 284);
+            this.lblTelNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblTelNo.Location = new System.Drawing.Point(273, 279);
             this.lblTelNo.Name = "lblTelNo";
-            this.lblTelNo.Size = new System.Drawing.Size(54, 17);
+            this.lblTelNo.Size = new System.Drawing.Size(76, 25);
             this.lblTelNo.TabIndex = 7;
             this.lblTelNo.Text = "Tel No:";
             // 
             // lblYas
             // 
             this.lblYas.AutoSize = true;
-            this.lblYas.Location = new System.Drawing.Point(254, 321);
+            this.lblYas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblYas.Location = new System.Drawing.Point(297, 311);
             this.lblYas.Name = "lblYas";
-            this.lblYas.Size = new System.Drawing.Size(36, 17);
+            this.lblYas.Size = new System.Drawing.Size(52, 25);
             this.lblYas.TabIndex = 8;
             this.lblYas.Text = "Yaş:";
             // 
             // lblBoy
             // 
             this.lblBoy.AutoSize = true;
-            this.lblBoy.Location = new System.Drawing.Point(254, 350);
+            this.lblBoy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblBoy.Location = new System.Drawing.Point(297, 343);
             this.lblBoy.Name = "lblBoy";
-            this.lblBoy.Size = new System.Drawing.Size(36, 17);
+            this.lblBoy.Size = new System.Drawing.Size(52, 25);
             this.lblBoy.TabIndex = 9;
             this.lblBoy.Text = "Boy:";
             // 
             // lblKilo
             // 
             this.lblKilo.AutoSize = true;
-            this.lblKilo.Location = new System.Drawing.Point(255, 379);
+            this.lblKilo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblKilo.Location = new System.Drawing.Point(298, 375);
             this.lblKilo.Name = "lblKilo";
-            this.lblKilo.Size = new System.Drawing.Size(35, 17);
+            this.lblKilo.Size = new System.Drawing.Size(51, 25);
             this.lblKilo.TabIndex = 10;
             this.lblKilo.Text = "Kilo:";
             // 
             // lblCinsiyet
             // 
             this.lblCinsiyet.AutoSize = true;
-            this.lblCinsiyet.Location = new System.Drawing.Point(254, 413);
+            this.lblCinsiyet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblCinsiyet.Location = new System.Drawing.Point(261, 407);
             this.lblCinsiyet.Name = "lblCinsiyet";
-            this.lblCinsiyet.Size = new System.Drawing.Size(61, 17);
+            this.lblCinsiyet.Size = new System.Drawing.Size(88, 25);
             this.lblCinsiyet.TabIndex = 9;
             this.lblCinsiyet.Text = "Cinsiyet:";
             // 
             // txtTC
             // 
-            this.txtTC.Location = new System.Drawing.Point(96, 284);
+            this.txtTC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtTC.Location = new System.Drawing.Point(107, 273);
             this.txtTC.Name = "txtTC";
-            this.txtTC.Size = new System.Drawing.Size(135, 22);
+            this.txtTC.Size = new System.Drawing.Size(135, 26);
             this.txtTC.TabIndex = 11;
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(96, 316);
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtName.Location = new System.Drawing.Point(107, 309);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(135, 22);
+            this.txtName.Size = new System.Drawing.Size(135, 26);
             this.txtName.TabIndex = 12;
             // 
             // txtSurname
             // 
-            this.txtSurname.Location = new System.Drawing.Point(96, 350);
+            this.txtSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtSurname.Location = new System.Drawing.Point(107, 345);
             this.txtSurname.Name = "txtSurname";
-            this.txtSurname.Size = new System.Drawing.Size(135, 22);
+            this.txtSurname.Size = new System.Drawing.Size(135, 26);
             this.txtSurname.TabIndex = 13;
             // 
             // txtMail
             // 
-            this.txtMail.Location = new System.Drawing.Point(96, 379);
+            this.txtMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtMail.Location = new System.Drawing.Point(107, 381);
             this.txtMail.Name = "txtMail";
-            this.txtMail.Size = new System.Drawing.Size(135, 22);
+            this.txtMail.Size = new System.Drawing.Size(135, 26);
             this.txtMail.TabIndex = 14;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(96, 408);
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtPassword.Location = new System.Drawing.Point(107, 417);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(135, 22);
+            this.txtPassword.Size = new System.Drawing.Size(135, 26);
             this.txtPassword.TabIndex = 15;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(96, 436);
+            this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtAddress.Location = new System.Drawing.Point(107, 453);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(135, 22);
+            this.txtAddress.Size = new System.Drawing.Size(135, 26);
             this.txtAddress.TabIndex = 16;
             // 
             // txtTelNo
             // 
-            this.txtTelNo.Location = new System.Drawing.Point(324, 281);
+            this.txtTelNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtTelNo.Location = new System.Drawing.Point(355, 276);
             this.txtTelNo.Name = "txtTelNo";
-            this.txtTelNo.Size = new System.Drawing.Size(135, 22);
+            this.txtTelNo.Size = new System.Drawing.Size(135, 26);
             this.txtTelNo.TabIndex = 17;
             // 
             // txtYas
             // 
-            this.txtYas.Location = new System.Drawing.Point(324, 316);
+            this.txtYas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtYas.Location = new System.Drawing.Point(355, 308);
             this.txtYas.Name = "txtYas";
-            this.txtYas.Size = new System.Drawing.Size(135, 22);
+            this.txtYas.Size = new System.Drawing.Size(135, 26);
             this.txtYas.TabIndex = 18;
             // 
             // txtBoy
             // 
-            this.txtBoy.Location = new System.Drawing.Point(324, 347);
+            this.txtBoy.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtBoy.Location = new System.Drawing.Point(355, 340);
             this.txtBoy.Name = "txtBoy";
-            this.txtBoy.Size = new System.Drawing.Size(135, 22);
+            this.txtBoy.Size = new System.Drawing.Size(135, 26);
             this.txtBoy.TabIndex = 19;
             // 
             // txtKilo
             // 
-            this.txtKilo.Location = new System.Drawing.Point(324, 379);
+            this.txtKilo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtKilo.Location = new System.Drawing.Point(355, 372);
             this.txtKilo.Name = "txtKilo";
-            this.txtKilo.Size = new System.Drawing.Size(135, 22);
+            this.txtKilo.Size = new System.Drawing.Size(135, 26);
             this.txtKilo.TabIndex = 20;
             // 
             // txtCinsiyet
             // 
-            this.txtCinsiyet.Location = new System.Drawing.Point(324, 410);
+            this.txtCinsiyet.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtCinsiyet.Location = new System.Drawing.Point(355, 404);
             this.txtCinsiyet.Name = "txtCinsiyet";
-            this.txtCinsiyet.Size = new System.Drawing.Size(135, 22);
+            this.txtCinsiyet.Size = new System.Drawing.Size(135, 26);
             this.txtCinsiyet.TabIndex = 21;
             // 
             // btnDiyetisyenEkle
             // 
+            this.btnDiyetisyenEkle.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnDiyetisyenEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnDiyetisyenEkle.Location = new System.Drawing.Point(534, 277);
             this.btnDiyetisyenEkle.Name = "btnDiyetisyenEkle";
             this.btnDiyetisyenEkle.Size = new System.Drawing.Size(236, 48);
             this.btnDiyetisyenEkle.TabIndex = 22;
-            this.btnDiyetisyenEkle.Text = "Ekle";
-            this.btnDiyetisyenEkle.UseVisualStyleBackColor = true;
+            this.btnDiyetisyenEkle.Text = "EKLE";
+            this.btnDiyetisyenEkle.UseVisualStyleBackColor = false;
             this.btnDiyetisyenEkle.Click += new System.EventHandler(this.btnDiyetisyenEkle_Click);
             // 
             // btnDiyetisyenSil
             // 
-            this.btnDiyetisyenSil.Location = new System.Drawing.Point(534, 337);
+            this.btnDiyetisyenSil.BackColor = System.Drawing.Color.Red;
+            this.btnDiyetisyenSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
+            this.btnDiyetisyenSil.Location = new System.Drawing.Point(534, 345);
             this.btnDiyetisyenSil.Name = "btnDiyetisyenSil";
             this.btnDiyetisyenSil.Size = new System.Drawing.Size(236, 48);
             this.btnDiyetisyenSil.TabIndex = 23;
             this.btnDiyetisyenSil.Text = "Sil";
-            this.btnDiyetisyenSil.UseVisualStyleBackColor = true;
+            this.btnDiyetisyenSil.UseVisualStyleBackColor = false;
             this.btnDiyetisyenSil.Click += new System.EventHandler(this.btnDiyetisyenSil_Click);
             // 
             // btnDiyetisyenGuncelle
             // 
+            this.btnDiyetisyenGuncelle.BackColor = System.Drawing.Color.Orange;
+            this.btnDiyetisyenGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.btnDiyetisyenGuncelle.Location = new System.Drawing.Point(534, 408);
             this.btnDiyetisyenGuncelle.Name = "btnDiyetisyenGuncelle";
             this.btnDiyetisyenGuncelle.Size = new System.Drawing.Size(236, 48);
             this.btnDiyetisyenGuncelle.TabIndex = 24;
             this.btnDiyetisyenGuncelle.Text = "Güncelle";
-            this.btnDiyetisyenGuncelle.UseVisualStyleBackColor = true;
+            this.btnDiyetisyenGuncelle.UseVisualStyleBackColor = false;
             this.btnDiyetisyenGuncelle.Click += new System.EventHandler(this.btnDiyetisyenGuncelle_Click);
             // 
             // FormAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 541);
+            this.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.ClientSize = new System.Drawing.Size(800, 517);
             this.Controls.Add(this.btnDiyetisyenGuncelle);
             this.Controls.Add(this.btnDiyetisyenSil);
             this.Controls.Add(this.btnDiyetisyenEkle);

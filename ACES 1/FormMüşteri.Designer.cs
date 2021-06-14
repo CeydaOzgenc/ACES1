@@ -40,123 +40,136 @@ namespace ACES_1
             this.lblBoy = new System.Windows.Forms.Label();
             this.lblKilo = new System.Windows.Forms.Label();
             this.lblCinsiyet = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTC
             // 
             this.lblTC.AutoSize = true;
-            this.lblTC.Location = new System.Drawing.Point(28, 36);
+            this.lblTC.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblTC.Location = new System.Drawing.Point(25, 90);
             this.lblTC.Name = "lblTC";
-            this.lblTC.Size = new System.Drawing.Size(30, 17);
+            this.lblTC.Size = new System.Drawing.Size(38, 24);
             this.lblTC.TabIndex = 0;
             this.lblTC.Text = "TC:";
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(29, 68);
+            this.lblName.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblName.Location = new System.Drawing.Point(22, 122);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(29, 17);
+            this.lblName.Size = new System.Drawing.Size(39, 24);
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Ad:";
             // 
             // lblSurname
             // 
             this.lblSurname.AutoSize = true;
-            this.lblSurname.Location = new System.Drawing.Point(28, 103);
+            this.lblSurname.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblSurname.Location = new System.Drawing.Point(21, 157);
             this.lblSurname.Name = "lblSurname";
-            this.lblSurname.Size = new System.Drawing.Size(52, 17);
+            this.lblSurname.Size = new System.Drawing.Size(68, 24);
             this.lblSurname.TabIndex = 2;
             this.lblSurname.Text = "Soyad:";
             // 
             // lblMail
             // 
             this.lblMail.AutoSize = true;
-            this.lblMail.Location = new System.Drawing.Point(28, 139);
+            this.lblMail.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMail.Location = new System.Drawing.Point(21, 193);
             this.lblMail.Name = "lblMail";
-            this.lblMail.Size = new System.Drawing.Size(33, 17);
+            this.lblMail.Size = new System.Drawing.Size(51, 24);
             this.lblMail.TabIndex = 3;
-            this.lblMail.Text = "Mail";
+            this.lblMail.Text = "Mail:";
             // 
             // lblTelNo
             // 
             this.lblTelNo.AutoSize = true;
-            this.lblTelNo.Location = new System.Drawing.Point(28, 207);
+            this.lblTelNo.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblTelNo.Location = new System.Drawing.Point(21, 261);
             this.lblTelNo.Name = "lblTelNo";
-            this.lblTelNo.Size = new System.Drawing.Size(82, 17);
+            this.lblTelNo.Size = new System.Drawing.Size(107, 24);
             this.lblTelNo.TabIndex = 4;
             this.lblTelNo.Text = "Telefon No:";
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(29, 174);
+            this.lblPassword.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblPassword.Location = new System.Drawing.Point(22, 228);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(41, 17);
+            this.lblPassword.Size = new System.Drawing.Size(54, 24);
             this.lblPassword.TabIndex = 5;
             this.lblPassword.Text = "Şifre:";
             // 
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
-            this.lblAddress.Location = new System.Drawing.Point(239, 36);
+            this.lblAddress.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblAddress.Location = new System.Drawing.Point(232, 90);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(49, 17);
+            this.lblAddress.Size = new System.Drawing.Size(64, 24);
             this.lblAddress.TabIndex = 6;
             this.lblAddress.Text = "Adres:";
             // 
             // lblYas
             // 
             this.lblYas.AutoSize = true;
-            this.lblYas.Location = new System.Drawing.Point(239, 68);
+            this.lblYas.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblYas.Location = new System.Drawing.Point(232, 122);
             this.lblYas.Name = "lblYas";
-            this.lblYas.Size = new System.Drawing.Size(36, 17);
+            this.lblYas.Size = new System.Drawing.Size(44, 24);
             this.lblYas.TabIndex = 6;
             this.lblYas.Text = "Yaş:";
             // 
             // lblBoy
             // 
             this.lblBoy.AutoSize = true;
-            this.lblBoy.Location = new System.Drawing.Point(239, 103);
+            this.lblBoy.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblBoy.Location = new System.Drawing.Point(232, 157);
             this.lblBoy.Name = "lblBoy";
-            this.lblBoy.Size = new System.Drawing.Size(36, 17);
+            this.lblBoy.Size = new System.Drawing.Size(48, 24);
             this.lblBoy.TabIndex = 6;
             this.lblBoy.Text = "Boy:";
             // 
             // lblKilo
             // 
             this.lblKilo.AutoSize = true;
-            this.lblKilo.Location = new System.Drawing.Point(240, 139);
+            this.lblKilo.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblKilo.Location = new System.Drawing.Point(233, 193);
             this.lblKilo.Name = "lblKilo";
-            this.lblKilo.Size = new System.Drawing.Size(35, 17);
+            this.lblKilo.Size = new System.Drawing.Size(48, 24);
             this.lblKilo.TabIndex = 6;
             this.lblKilo.Text = "Kilo:";
             // 
             // lblCinsiyet
             // 
             this.lblCinsiyet.AutoSize = true;
-            this.lblCinsiyet.Location = new System.Drawing.Point(239, 174);
+            this.lblCinsiyet.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblCinsiyet.Location = new System.Drawing.Point(232, 228);
             this.lblCinsiyet.Name = "lblCinsiyet";
-            this.lblCinsiyet.Size = new System.Drawing.Size(61, 17);
+            this.lblCinsiyet.Size = new System.Drawing.Size(83, 24);
             this.lblCinsiyet.TabIndex = 6;
             this.lblCinsiyet.Text = "Cinsiyet:";
             // 
-            // button1
+            // label1
             // 
-            this.button1.Location = new System.Drawing.Point(35, 278);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe Script", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(95, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(274, 54);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Müşteri Bilgi ";
             // 
             // FormMüşteri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(463, 356);
-            this.Controls.Add(this.button1);
+            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.ClientSize = new System.Drawing.Size(463, 319);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblCinsiyet);
             this.Controls.Add(this.lblKilo);
             this.Controls.Add(this.lblBoy);
@@ -189,6 +202,6 @@ namespace ACES_1
         private System.Windows.Forms.Label lblBoy;
         private System.Windows.Forms.Label lblKilo;
         private System.Windows.Forms.Label lblCinsiyet;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
     }
 }

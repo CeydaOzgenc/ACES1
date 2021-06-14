@@ -57,6 +57,7 @@ namespace ACES_1
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(-1, 2);
             this.dataGridView1.Name = "dataGridView1";
@@ -70,36 +71,40 @@ namespace ACES_1
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(627, 67);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(626, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 17);
+            this.label1.Size = new System.Drawing.Size(109, 24);
             this.label1.TabIndex = 1;
             this.label1.Text = "Müşteri Adı:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(627, 111);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(626, 61);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 17);
+            this.label2.Size = new System.Drawing.Size(138, 24);
             this.label2.TabIndex = 2;
             this.label2.Text = "Müşteri Soyadı:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(627, 159);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(626, 109);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 17);
+            this.label3.Size = new System.Drawing.Size(79, 24);
             this.label3.TabIndex = 3;
             this.label3.Text = "Hastalik:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(627, 243);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(626, 193);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 17);
+            this.label4.Size = new System.Drawing.Size(99, 24);
             this.label4.TabIndex = 4;
             this.label4.Text = "Öğün Tipi:";
             // 
@@ -125,89 +130,99 @@ namespace ACES_1
             // lblMusteriAd
             // 
             this.lblMusteriAd.AutoSize = true;
-            this.lblMusteriAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblMusteriAd.Location = new System.Drawing.Point(778, 67);
+            this.lblMusteriAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMusteriAd.Location = new System.Drawing.Point(777, 17);
             this.lblMusteriAd.Name = "lblMusteriAd";
-            this.lblMusteriAd.Size = new System.Drawing.Size(0, 20);
+            this.lblMusteriAd.Size = new System.Drawing.Size(0, 24);
             this.lblMusteriAd.TabIndex = 6;
             // 
             // lblMusteriSoyad
             // 
             this.lblMusteriSoyad.AutoSize = true;
-            this.lblMusteriSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblMusteriSoyad.Location = new System.Drawing.Point(778, 108);
+            this.lblMusteriSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMusteriSoyad.Location = new System.Drawing.Point(777, 58);
             this.lblMusteriSoyad.Name = "lblMusteriSoyad";
-            this.lblMusteriSoyad.Size = new System.Drawing.Size(0, 20);
+            this.lblMusteriSoyad.Size = new System.Drawing.Size(0, 24);
             this.lblMusteriSoyad.TabIndex = 7;
             // 
             // lblMusteriHastalik
             // 
             this.lblMusteriHastalik.AutoSize = true;
-            this.lblMusteriHastalik.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblMusteriHastalik.Location = new System.Drawing.Point(778, 159);
+            this.lblMusteriHastalik.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMusteriHastalik.Location = new System.Drawing.Point(777, 109);
             this.lblMusteriHastalik.Name = "lblMusteriHastalik";
-            this.lblMusteriHastalik.Size = new System.Drawing.Size(0, 20);
+            this.lblMusteriHastalik.Size = new System.Drawing.Size(0, 24);
             this.lblMusteriHastalik.TabIndex = 8;
             // 
             // lbl73
             // 
             this.lbl73.AutoSize = true;
-            this.lbl73.Location = new System.Drawing.Point(627, 198);
+            this.lbl73.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl73.Location = new System.Drawing.Point(626, 148);
             this.lbl73.Name = "lbl73";
-            this.lbl73.Size = new System.Drawing.Size(30, 17);
+            this.lbl73.Size = new System.Drawing.Size(40, 24);
             this.lbl73.TabIndex = 15;
             this.lbl73.Text = "TC:";
             // 
             // lblTC
             // 
             this.lblTC.AutoSize = true;
-            this.lblTC.Location = new System.Drawing.Point(779, 198);
+            this.lblTC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblTC.Location = new System.Drawing.Point(778, 148);
             this.lblTC.Name = "lblTC";
-            this.lblTC.Size = new System.Drawing.Size(0, 17);
+            this.lblTC.Size = new System.Drawing.Size(0, 24);
             this.lblTC.TabIndex = 15;
             // 
             // lblOgunTip
             // 
             this.lblOgunTip.AutoSize = true;
-            this.lblOgunTip.Location = new System.Drawing.Point(782, 242);
+            this.lblOgunTip.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblOgunTip.Location = new System.Drawing.Point(781, 192);
             this.lblOgunTip.Name = "lblOgunTip";
-            this.lblOgunTip.Size = new System.Drawing.Size(0, 17);
+            this.lblOgunTip.Size = new System.Drawing.Size(0, 24);
             this.lblOgunTip.TabIndex = 16;
             // 
             // btnEkle
             // 
+            this.btnEkle.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.btnEkle.Location = new System.Drawing.Point(49, 296);
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.Size = new System.Drawing.Size(123, 44);
             this.btnEkle.TabIndex = 17;
             this.btnEkle.Text = "Ekle";
-            this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.UseVisualStyleBackColor = false;
             this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // btnSil
             // 
+            this.btnSil.BackColor = System.Drawing.Color.Red;
+            this.btnSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.btnSil.Location = new System.Drawing.Point(232, 296);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(123, 44);
             this.btnSil.TabIndex = 18;
             this.btnSil.Text = "Sil";
-            this.btnSil.UseVisualStyleBackColor = true;
+            this.btnSil.UseVisualStyleBackColor = false;
             this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnDiyet
             // 
-            this.btnDiyet.Location = new System.Drawing.Point(782, 296);
+            this.btnDiyet.BackColor = System.Drawing.Color.Orange;
+            this.btnDiyet.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.btnDiyet.Location = new System.Drawing.Point(781, 254);
             this.btnDiyet.Name = "btnDiyet";
             this.btnDiyet.Size = new System.Drawing.Size(123, 44);
             this.btnDiyet.TabIndex = 19;
             this.btnDiyet.Text = "Diyet";
-            this.btnDiyet.UseVisualStyleBackColor = true;
+            this.btnDiyet.UseVisualStyleBackColor = false;
             this.btnDiyet.Click += new System.EventHandler(this.btnDiyet_Click);
             // 
             // FormDiyetisyen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(949, 369);
             this.Controls.Add(this.btnDiyet);
             this.Controls.Add(this.btnSil);
@@ -224,7 +239,7 @@ namespace ACES_1
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "FormDiyetisyen";
-            this.Text = "Form2";
+            this.Text = "FormDiyetisyen";
             this.Load += new System.EventHandler(this.FormDiyetisyen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diyetveri_050621DataSet)).EndInit();
