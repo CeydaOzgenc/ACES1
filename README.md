@@ -20,9 +20,9 @@ Video Link: https://youtu.be/V48zYm6GCnQ
 
 UML DİYAGRAMLARI; 
 
-![image](https://github.com/CeydaOzgenc/ACES1/assets/82287243/6da2b055-a3ef-4ed8-b71e-40cb3e4ed817)
-
 ![image](https://github.com/CeydaOzgenc/ACES1/assets/82287243/68df4871-77ad-4c5c-8436-958af485c831)
+
+![image](https://github.com/CeydaOzgenc/ACES1/assets/82287243/6da2b055-a3ef-4ed8-b71e-40cb3e4ed817)
 
 ![image](https://github.com/CeydaOzgenc/ACES1/assets/82287243/3859010f-c0fd-419e-bde2-5bfdaf51a646)
 
